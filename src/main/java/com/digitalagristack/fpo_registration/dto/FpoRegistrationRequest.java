@@ -1,7 +1,12 @@
 package com.digitalagristack.fpo_registration.dto;
 
-import com.digitalagristack.fpo_registration.Enum.ServiceType; // ✅ Import added
-import jakarta.validation.constraints.*;
+import com.digitalagristack.fpo_registration.Enum.ServiceType;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.util.List;
@@ -9,7 +14,6 @@ import java.util.List;
 @Data
 public class FpoRegistrationRequest {
 
-    // Basic Info
     @NotBlank(message = "Country is required")
     private String country;
 
