@@ -1,8 +1,10 @@
 package com.digitalagristack.fpo_registration.service;
 
+import com.digitalagristack.fpo_registration.Enum.ServiceType;
 import com.digitalagristack.fpo_registration.dto.FpoRegistrationRequest;
 import com.digitalagristack.fpo_registration.entity.FpoRegistration;
-import com.digitalagristack.fpo_registration.Enum.ServiceType;
+import com.digitalagristack.fpo_registration.exception.FpoNotFoundException;
+import com.digitalagristack.fpo_registration.exception.InvalidFpoDataException;
 import com.digitalagristack.fpo_registration.repository.FpoRegistrationRepository;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +27,7 @@ public class FpoRegistrationService {
     // Read
     public FpoRegistration getFpoById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("FPO not found with id: " + id));
+                .orElseThrow(() -> new FpoNotFoundException("FPO not found with id: " + id));
     }
 
     // Update
@@ -57,7 +59,7 @@ public class FpoRegistrationService {
     private void validateRequest(FpoRegistrationRequest req) {
         if (req.getSelectedServices().contains(ServiceType.OTHERS) &&
             (req.getOtherService() == null || req.getOtherService().trim().isEmpty())) {
-            throw new IllegalArgumentException("Please specify 'Other Service' if 'OTHERS' is selected.");
+            throw new InvalidFpoDataException("Please specify 'Other Service' if 'OTHERS' is selected.");
         }
     }
 
