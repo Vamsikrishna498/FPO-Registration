@@ -5,6 +5,7 @@ import com.digitalagristack.fpo_registration.dto.FpoRegistrationRequest;
 import com.digitalagristack.fpo_registration.entity.FpoRegistration;
 import com.digitalagristack.fpo_registration.exception.FpoNotFoundException;
 import com.digitalagristack.fpo_registration.exception.InvalidFpoDataException;
+import com.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper;
 import com.digitalagristack.fpo_registration.repository.FpoRegistrationRepository;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class FpoRegistrationService {
     // Create
     public FpoRegistration registerFpo(FpoRegistrationRequest req) {
         validateRequest(req);
-        FpoRegistration entity = buildEntityFromRequest(req);
+        FpoRegistration entity = FpoRegistrationMapper.toEntity(req);
         return repository.save(entity);
     }
 
@@ -34,24 +35,7 @@ public class FpoRegistrationService {
     public void updateFpo(Long id, FpoRegistrationRequest req) {
         validateRequest(req);
         FpoRegistration existing = getFpoById(id);
-
-        existing.setCountry(req.getCountry());
-        existing.setState(req.getState());
-        existing.setDistrict(req.getDistrict());
-        existing.setFpoName(req.getFpoName());
-        existing.setFpoRegNumber(req.getFpoRegNumber());
-        existing.setFpoCeoName(req.getFpoCeoName());
-        existing.setMobile(req.getMobile());
-        existing.setEmail(req.getEmail());
-        existing.setTotalMembers(req.getTotalMembers());
-        existing.setNoOfAcres(req.getNoOfAcres());
-        existing.setHNo(req.getHNo());
-        existing.setVillage(req.getVillage());
-        existing.setAddressState(req.getAddressState());
-        existing.setPincode(req.getPincode());
-        existing.setSelectedServices(req.getSelectedServices());
-        existing.setOtherService(req.getOtherService());
-
+        FpoRegistrationMapper.updateEntity(existing, req);
         repository.save(existing);
     }
 
@@ -61,27 +45,5 @@ public class FpoRegistrationService {
             (req.getOtherService() == null || req.getOtherService().trim().isEmpty())) {
             throw new InvalidFpoDataException("Please specify 'Other Service' if 'OTHERS' is selected.");
         }
-    }
-
-    // Mapping helper
-    private FpoRegistration buildEntityFromRequest(FpoRegistrationRequest req) {
-        return FpoRegistration.builder()
-                .country(req.getCountry())
-                .state(req.getState())
-                .district(req.getDistrict())
-                .fpoName(req.getFpoName())
-                .fpoRegNumber(req.getFpoRegNumber())
-                .fpoCeoName(req.getFpoCeoName())
-                .mobile(req.getMobile())
-                .email(req.getEmail())
-                .totalMembers(req.getTotalMembers())
-                .noOfAcres(req.getNoOfAcres())
-                .hNo(req.getHNo())
-                .village(req.getVillage())
-                .addressState(req.getAddressState())
-                .pincode(req.getPincode())
-                .selectedServices(req.getSelectedServices())
-                .otherService(req.getOtherService())
-                .build();
     }
 }
