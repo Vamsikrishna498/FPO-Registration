@@ -1,6 +1,6 @@
 package com.digitalagristack.fpo_registration.entity;
 
-import com.digitalagristack.fpo_registration.Enum.ServiceType; 
+import com.digitalagristack.fpo_registration.Enum.ServiceType; // ✅ Import added
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
