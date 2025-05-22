@@ -1,0 +1,6 @@
+com.digitalagristack.fpo_registration.Controller.FpoRegistrationController#getFpoById(Ljava/lang/Long;)LResponseEntity;
+false
+062b05214651afe1ac9f29e9617fc935
+==
+!unknownMethod! !unknownMethod!
+getFpoById com.digitalagristack.fpo_registration.service.FpoRegistrationService#getFpoById(Ljava/lang/Long;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;

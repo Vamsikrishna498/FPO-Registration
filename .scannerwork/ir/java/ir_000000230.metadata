@@ -1,0 +1,6 @@
+com.digitalagristack.fpo_registration.Controller.FpoRegistrationController#registerFpo(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)LResponseEntity;
+false
+2931c37d485856ab20ab38291415d3f4
+==
+!unknownMethod! !unknownMethod!
+registerFpo com.digitalagristack.fpo_registration.service.FpoRegistrationService#registerFpo(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;

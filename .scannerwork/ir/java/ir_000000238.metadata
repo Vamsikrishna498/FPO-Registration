@@ -1,0 +1,7 @@
+com.digitalagristack.fpo_registration.service.FpoRegistrationService#validateRequest(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V
+false
+1ef99051301182bac6701d4d919c10fc
+com.digitalagristack.fpo_registration.exception.InvalidFpoDataException#<init>(Ljava/lang/String;)V
+com.digitalagristack.fpo_registration.exception.InvalidFpoDataException#instance-init#
+==
+!unknownMethod! !unknownMethod!

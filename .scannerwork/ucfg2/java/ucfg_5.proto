@@ -1,0 +1,23 @@
+
+ücom.digitalagristack.fpo_registration.service.FpoRegistrationService#getFpoById(Ljava/lang/Long;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;è
+ÑC:/Users/User/Desktop/Vamsi/fpo-registration/src/main/java/com/digitalagristack/fpo_registration/service/FpoRegistrationService.java (%"1*ü
+1 (€
+ÿ
+ (P
+%0Jcom.digitalagristack.fpo_registration.repository.FpoRegistrationRepository"__id*t
+
+__unknown_file (X*VF
+Dcom.digitalagristack.fpo_registration.service.FpoRegistrationService"
+
+repositoryù
+ö
+ ([
+%1"__declareFunction*u
+
+__unknown_file (YW
+U__sonar_lambda_0$com.digitalagristack.fpo_registration.service.FpoRegistrationService"
+ (]
+"": 
+& (-
+idjava.lang.LongBHF
+Dcom.digitalagristack.fpo_registration.service.FpoRegistrationServiceH

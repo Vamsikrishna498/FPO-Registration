@@ -1,0 +1,12 @@
+
+Õcom.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper#toEntity(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;ç
+ÇC:/Users/User/Desktop/Vamsi/fpo-registration/src/main/java/com/digitalagristack/fpo_registration/mapper/FpoRegistrationMapper.java	" 	(*"1*!
+1
+ 
+("
+
+ (
+"":S
+	+ 	(EG
+req@com.digitalagristack.fpo_registration.dto.FpoRegistrationRequestBF"D
+Bcom.digitalagristack.fpo_registration.mapper.FpoRegistrationMapperH

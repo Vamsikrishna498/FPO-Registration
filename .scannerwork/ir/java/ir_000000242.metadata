@@ -1,0 +1,8 @@
+com.digitalagristack.fpo_registration.exception.GlobalExceptionHandler#handleInvalidFpoData(Lcom/digitalagristack/fpo_registration/exception/InvalidFpoDataException;LWebRequest;)LResponseEntity;
+false
+21ea0ace7dd4382f00600cf9bc4dc0c4
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+==
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

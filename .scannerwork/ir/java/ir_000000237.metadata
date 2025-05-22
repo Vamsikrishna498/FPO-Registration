@@ -1,0 +1,8 @@
+com.digitalagristack.fpo_registration.service.FpoRegistrationService#updateFpo(Ljava/lang/Long;Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V
+false
+bb1cf5c9b6a96f14fd8709e3326dfc99
+com.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper#updateEntity(Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V
+com.digitalagristack.fpo_registration.service.FpoRegistrationService#validateRequest(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V
+==
+!unknownMethod! !unknownMethod!
+getFpoById com.digitalagristack.fpo_registration.service.FpoRegistrationService#getFpoById(Ljava/lang/Long;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;

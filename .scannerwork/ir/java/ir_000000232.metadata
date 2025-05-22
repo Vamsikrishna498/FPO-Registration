@@ -1,0 +1,6 @@
+com.digitalagristack.fpo_registration.Controller.FpoRegistrationController#updateFpo(Ljava/lang/Long;Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)LResponseEntity;
+false
+7aa264bc7f273bdd03b539f73a8d8e92
+==
+!unknownMethod! !unknownMethod!
+updateFpo com.digitalagristack.fpo_registration.service.FpoRegistrationService#updateFpo(Ljava/lang/Long;Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V

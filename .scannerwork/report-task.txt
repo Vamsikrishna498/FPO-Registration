@@ -1,0 +1,6 @@
+projectKey=fpo-registration
+serverUrl=http://localhost:9000
+serverVersion=2025.2.0.105476
+dashboardUrl=http://localhost:9000/dashboard?id=fpo-registration
+ceTaskId=1f302f37-4e29-4647-9df7-bf1994de7ee4
+ceTaskUrl=http://localhost:9000/api/ce/task?id=1f302f37-4e29-4647-9df7-bf1994de7ee4

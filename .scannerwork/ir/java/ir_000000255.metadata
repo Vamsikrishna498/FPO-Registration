@@ -1,0 +1,5 @@
+com.digitalagristack.fpo_registration.exception.InvalidFpoDataException#<init>(Ljava/lang/String;)V
+false
+63709fc6aedfce4ae7633d2017bdff07
+==
+<init> java.lang.RuntimeException#<init>(Ljava/lang/String;)V

@@ -1,0 +1,129 @@
+
+1.0fpo-registrationJavaFrontend"1747885655291*java2.Bø
+Z
+Usrc/main/java/com/digitalagristack/fpo_registration/mapper/FpoRegistrationMapper.java2
+
+package4
+1
+,com.digitalagristack.fpo_registration.mapper5
+G
+Bcom.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+FpoRegistrationMapper12
+Ô
+Ícom.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper#toEntity(Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;14
+
+method15
+
+toEntity16
+B
+<com.digitalagristack.fpo_registration.entity.FpoRegistration18
+
+unknown19
+
+returns20
+F
+@com.digitalagristack.fpo_registration.dto.FpoRegistrationRequest22
+
+	has param23
+
+
+uses24
+
+is type25
+Ù
+Òcom.digitalagristack.fpo_registration.mapper.FpoRegistrationMapper#updateEntity(Lcom/digitalagristack/fpo_registration/entity/FpoRegistration;Lcom/digitalagristack/fpo_registration/dto/FpoRegistrationRequest;)V27
+
+updateEntity28J
+
+1
+12Z
+
+3	
+354jç
+
+17
+171819
+
+21
+212219
+9
+64
+678 *
+1 (#:3B
+	
+9
+10
+
+
+11
+12
+@
+26:
+262715 *
+1 (26:3B
+	
+9
+10
+
+
+11
+28
+@
+13:
+131415 *
+1	 	(26:3B
+	
+9
+10
+
+
+11
+16rÄ
+
+131720*
+1	 	("
+
+132123*
+1	, 	(B
+
+131724*
+1	 	("
+
+132125*
+1	C 	(F
+
+132124*
+1	, 	(B
+
+131724*
+1
+ 
+(
+
+261723*
+1% (4
+
+262123*
+1= (S
+
+261725*
+15 (;
+
+261724*
+1% (4
+
+262125*
+1T (W
+
+262124*
+1= (S
